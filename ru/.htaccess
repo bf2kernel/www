@@ -1,0 +1,5 @@
+AddHandler application/x-httpd-php htm html
+
+<IfModule dir_module>
+    DirectoryIndex index.html
+</IfModule>

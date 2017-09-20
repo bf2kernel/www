@@ -1,0 +1,92 @@
+/* Global */
+html {
+	//overflow:  hidden;
+	position: relative;
+	min-height: 100%; }
+
+body {
+	/*background: url(../images/bg.jpg) no-repeat center center fixed;
+	background-size: cover;*/
+	padding-top: 120px;
+	margin-bottom: 190px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #1e1e1e;
+	color: #ccc;
+	overflow-y: scroll; }
+
+.com {
+	left: 0; /* Левый нижний угол */
+	padding: 10px; /* Поля вокруг текста */
+	color: #fff; /* Цвет текста */
+	width: 100%; /* Ширина слоя */
+	}	
+	
+.news {
+	max-width: 800px;
+	margin: 60px auto 0 auto; }	
+	
+/* Header */
+.navbar {
+	height: 120px;
+	background-color: transparent;
+	border-color: transparent;
+	-webkit-transition: height 0.3s, background-color 0.3s;
+	transition: height 0.3s, background-color 0.3s; }
+.navbar .logo {
+	margin-top: 25px;
+	padding: 0;
+	/*margin: 10px 0;*/
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; }
+.navbar .logo img {
+	/*margin-left: -20px;*/
+	height: 70px;
+	width: auto;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; }
+.navbar .container {
+	
+	position: relative;
+	height: 120px;
+	-webkit-transition: height 0.3s;
+	transition: height 0.3s; }
+.navbar .nav {
+	float: right;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%); }
+.navbar .nav > li {
+	line-height: 32px; }
+.navbar .nav > li > a {
+	line-height: 32px;
+	text-transform: uppercase;
+	padding: 0 15px 0 15px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #a0a0a0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; }
+.navbar .nav > li.active > a {
+	color: #ccc;
+	background-color: transparent; }
+.navbar .nav > li.active > a:hover {
+	background-color: transparent; }
+.navbar .nav > li:last-of-type > a {
+	padding-right: 0; }
+.navbar.shrink {
+	height: 70px;
+	background-color: #1a1a1a;
+	/*.nav > li > a {
+	line-height: $HeaderHeightSmall;
+	}*/ }
+.navbar.shrink .container {
+	height: 70px; }
+.navbar.shrink .logo {
+	margin-top: 13px;
+	/*margin: 5px 0;*/ }
+.navbar.shrink .logo img {
+	/*margin-left: -5px;*/
+	height: 45px; }

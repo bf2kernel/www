@@ -1,0 +1,176 @@
+#footer {
+	position: fixed; /* Фиксированное положение */
+	left: 0; bottom: 0; /* Левый нижний угол */
+	padding: 10px; /* Поля вокруг текста */
+	color: #fff; /* Цвет текста */
+	width: 100%; /* Ширина слоя */
+	}
+   
+/**/
+.front {
+	/*margin-top: 100vh;*/
+	padding-top: 0; }
+	.front .navbar.shrink {
+	background-color: rgba(0, 0, 0, 0.6); }
+	.front .navbar .nav li a {
+	color: #fff !important; }
+	.front .navbar .nav .login button {
+	/*margin-left: 0;*/
+	border-color: transparent;
+	color: #fff; }
+	.front .navbar .nav .login button:hover {
+	color: #fff;
+	border-color: transparent; }
+	
+.intro {
+	position: absolute;
+	top: 35vh;
+	width: 100%;
+	color: #fff;
+	text-align: center; }
+	.intro h1 {
+	margin-bottom: 30px; }
+	.intro .btn-clean {
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 0;
+	color: #fff; }
+	.intro .btn-clean .fa {
+	margin-right: 5px; }
+	.intro .btn-clean:hover {
+	color: #fff; }
+
+.news {
+	max-width: 800px;
+	margin: 60px auto 0 auto; }
+	.news .news-item {
+	margin-bottom: 45px; }
+	.news h1 {
+	font-size: 2.5rem;
+	margin-bottom: 7.5px; }
+	.news .date {
+	color: #a0a0a0 !important;
+	font-size: 1.2rem; }
+	.news p {
+	margin-bottom: 15px; }
+
+/* Global */
+html {
+	overflow:  hidden;
+	position: relative;
+	min-height: 100%; }
+
+body {
+	background: url(../images/bg/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	padding-top: 120px;
+	margin-bottom: 190px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #1e1e1e;
+	color: #ccc;
+	//overflow-y: scroll; }
+
+/* Header */
+.navbar {
+	height: 120px;
+	background-color: transparent;
+	border-color: transparent;
+	-webkit-transition: height 0.3s, background-color 0.3s;
+	transition: height 0.3s, background-color 0.3s; }
+.navbar .logo {
+	margin-top: 25px;
+	padding: 0;
+	/*margin: 10px 0;*/
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; }
+.navbar .logo img {
+	/*margin-left: -20px;*/
+	height: 70px;
+	width: auto;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; }
+.navbar .container {
+	position: relative;
+	height: 120px;
+	-webkit-transition: height 0.3s;
+	transition: height 0.3s; }
+.navbar .nav {
+	float: right;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%); }
+.navbar .nav > li {
+	/*position: relative;
+	top: 50%;*/
+	line-height: 32px; }
+.navbar .nav > li > a {
+	line-height: 32px;
+	text-transform: uppercase;
+	/*line-height: 32px;*/
+	/*line-height: $HeaderHeight;*/
+	padding: 0 15px 0 15px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #a0a0a0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; }
+.navbar .nav > li.active > a {
+	color: #ccc;
+	background-color: transparent; }
+.navbar .nav > li.active > a:hover {
+	background-color: transparent; }
+.navbar .nav > li:last-of-type > a {
+	padding-right: 0; }
+.navbar .nav .dropdown-menu {
+	min-width: 100px;
+	background-color: #1e1e1e;
+	left: 0;
+	right: 0; }
+.navbar .nav .dropdown-menu > li > a {
+	color: #ccc; }
+.navbar .nav .dropdown-menu > li > a:hover {
+	background-color: #1e1e1e;
+	color: #fff; }
+.navbar .nav .user > a {
+      text-transform: none; }
+.navbar .nav .user img {
+      border-radius: 4px;
+      overflow: hidden; }
+.navbar .nav .user.open > a {
+      background-color: transparent; }
+.navbar .nav .login button {
+	position: relative;
+	top: -1px;
+	padding: 0px 12px;
+	margin-left: 15px;
+	background-color: transparent;
+	border: 1px solid #1db954;
+	font-size: 1.6rem;
+	color: #1db954;
+	text-transform: uppercase;
+	-webkit-transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+	transition: color 0.3s, border-color 0.3s, background-color 0.3s; }
+.navbar .nav .login button .fa {
+	margin-right: 4px;
+	min-width: 16px; }
+.navbar .nav .login button:hover {
+	color: #1e1e1e;
+	border-color: #1db954;
+	background-color: #1db954; }
+.navbar.shrink {
+	height: 70px;
+	background-color: #1a1a1a;
+	/*.nav > li > a {
+	line-height: $HeaderHeightSmall;
+	}*/ }
+.navbar.shrink .container {
+	height: 70px; }
+.navbar.shrink .logo {
+	margin-top: 13px;
+	/*margin: 5px 0;*/ }
+.navbar.shrink .logo img {
+	/*margin-left: -5px;*/
+	height: 45px; }
